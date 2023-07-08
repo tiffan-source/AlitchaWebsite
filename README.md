@@ -1,70 +1,23 @@
-# Getting Started with Create React App
+# Alitcha Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Cette version du site web d'Alitcha est une reprise du projet deja existant sur [AlitchaProduct](https://github.com/Alitcha-products/alitchaWebsite.git)
+Le but de cette version est de presenter une meiilleur architecture de code, des regles de collaborations plus pratique afin d'avoir un code maintenable et evolutif sur le long terme
 
-## Available Scripts
+## Contribuer au developpement
 
-In the project directory, you can run:
+- Effectuer un fork du projet afin de disposer d'une version du projet sur votre compte github
+- Cloner votre version du projet localement
+- Situer dans le dossier racine et installer les dependances
+- Lancer votre serveur de developpement
+```
+npm install # Installe les dependances
+npm start # Lance le serveur de developpement
+```
 
-### `npm start`
+## Taches, Objectifs, Bugs
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+L'ensemble des taches, objectifs et bugs seront expose au travers d'issue.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Taches et Objectifs
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Les taches et objectifs seront decrites chacune dans des issues et indiqueront ce qui est attendu. Pour la prendre en main il suffit de se l'assigner et de la resoudre sur votre version du prpjet. Une fois resolu effectuer une pull request vers le depot present en mettant en titre, le titre de l'issue (de la tache). LE code sera revu, tester et les resultats observes. Une fois valider il sera merger au projet et l'issue fermer.

@@ -8,12 +8,12 @@ function Realisation() {
   return (
     <div className='my-8'>
         <h2 className='text-xl pb-4 text-center text-primary'>Realisations</h2>
-        <h1 className='text-3xl pb-8 text-center text-secondary font-bold'>Qu'avons nous fait ?</h1>
+        <h1 className='text-3xl pb-8 text-center text-secondary font-bold'>Que faisons nous:</h1>
 
         <Tabs tabs={[
-            {title : "Kumaa", content : <Kumaa/>},
-            {title : "Alitcha Framework", content : <Framework/>},
-            {title : "Nyota", content : <Nyota/>},
+            {title : "Alitcha Business Tools", content : <Kumaa/>},
+            {title : "Alitcha Services", content : <Framework/>},
+            {title : "Think and create the future", content : <Nyota/>},
         ]}/>
     </div>
   )

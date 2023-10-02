@@ -10,7 +10,7 @@ function Button({children, rounded, secondary}) {
         additionalClass += ' bg-secondary'
 
     return (
-        <button className={'px-4 py-3 bg-primary text-white' + additionalClass}>
+        <button className={'px-4 py-3 bg-primary text-white md:w-max' + additionalClass}>
             {children}
         </button>
     )

@@ -1,12 +1,19 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Button from '../Button/Button';
 import logo from '../../assets/logo.png'
 import menu from '../../assets/menu.png'
 import close from '../../assets/cross.png'
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
+import Navlist from '../../router/Navlist';
 
 function Navbar() {
     const [hideNav, setHideNav] = useState(false)
+
+    const {pathname} = useLocation();
+
+    useEffect(()=>{
+        console.log(pathname);
+    })
 
     return (
     <>
@@ -15,24 +22,15 @@ function Navbar() {
                 <img src={logo} alt="Logo Alitcha"/>
             </span>
             <ul className='hidden lg:flex gap-6'>
-                <li className=''>
-                    <a className='cursor-pointer hover:text-primary font-thin' href="/home">Acceuil</a>
-                </li>
-                <li className=''>
-                    <a className='cursor-pointer hover:text-primary font-thin' href="/services">Services</a>
-                </li>
-                <li className=''>
-                    <a className='cursor-pointer hover:text-primary font-thin' href="/apropos">A Propos</a>
-                </li>
-                <li className=''>
-                    <a className='cursor-pointer hover:text-primary font-thin' href="/realisations">Realisations</a>
-                </li>
-                <li className=''>
-                    <a className='cursor-pointer hover:text-primary font-thin' href="/blog">Blog</a>
-                </li>
-                <li className=''>
-                    <a className='cursor-pointer hover:text-primary font-thin' href="/event">Evenements</a>
-                </li>
+                {
+                    Navlist.map((nav, index)=>{
+                        return (
+                            <li className='' key={index}>
+                                <Link className={'cursor-pointer hover:text-primary ' + (pathname === nav.path && 'font-bold text-primary')} to={nav.path}>{nav.name}</Link>
+                            </li>
+                        )
+                    })
+                }
             </ul>
             <div className='flex items-center gap-4'>
                 <Button rounded>Demander un devis</Button>
@@ -48,24 +46,15 @@ function Navbar() {
                     <img className='max-w-[1.5rem] cursor-pointer' src={close} alt="close icone" onClick={()=>{setHideNav(!hideNav)}}/>
                 </div>
                 <ul className='grow flex flex-col justify-between'>
-                    <li className='border-b border-gray-300 text-center text-lg py-4'>
-                        <a className='cursor-pointer hover:text-primary' href="/home">Acceuil</a>
-                    </li>
-                    <li className='border-b border-gray-300 text-center text-lg py-4'>
-                        <a className='cursor-pointer hover:text-primary' href="/services">Services</a>
-                    </li>
-                    <li className='border-b border-gray-300 text-center text-lg py-4'>
-                        <a className='cursor-pointer hover:text-primary' href="/apropos">A Propos</a>
-                    </li>
-                    <li className='border-b border-gray-300 text-center text-lg py-4'>
-                        <a className='cursor-pointer hover:text-primary' href="/realisations">Realisations</a>
-                    </li>
-                    <li className='border-b border-gray-300 text-center text-lg py-4'>
-                        <a className='cursor-pointer hover:text-primary' href="/blog">Blog</a>
-                    </li>
-                    <li className='border-b border-gray-300 text-center text-lg py-4'>
-                        <a className='cursor-pointer hover:text-primary' href="/event">Evenements</a>
-                    </li>
+                {
+                    Navlist.map((nav, index)=>{
+                        return (
+                            <li className='border-b border-gray-300 text-center text-lg py-4'>
+                                <Link className='cursor-pointer hover:text-primary' onClick={()=>{hideNav(true)}} to={nav.path}>{nav.name}</Link>
+                            </li>
+                        )
+                    })
+                }
                 </ul>
                 <div className='text-center'>
                     <Button rounded>Demander un devis</Button>

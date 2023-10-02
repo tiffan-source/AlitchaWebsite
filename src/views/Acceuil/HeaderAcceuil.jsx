@@ -6,7 +6,7 @@ function HeaderAcceuil() {
   return (
     <header className='lg:grid grid-cols-2 gap-6 my-8'>
         <div className='flex flex-col justify-center'>
-            <h2 className='capitalize text-xl pb-4'>Avec Alitcha Technologies,</h2>
+            <h2 className='capitalize text-xl pb-4'>Avec Alitcha</h2>
             <h1 className='font-bold text-3xl pb-8'>
                 Rien ne vous sera <span className='text-primary'>Impossible.</span>
             </h1>
@@ -14,8 +14,7 @@ function HeaderAcceuil() {
                 <img src={chatbot1} alt="Chatbot"/>
             </div>
             <p className='text-gray-600'>
-                Nous sommes une startups répondant à des besoins précis, des produits et services technologiques conformément à nos domaines d’expertise. Et ce, que vous soyez une entreprise, une organisation, un entrepreneur, un gouvernement ou un particulier.
-            </p>
+            Nous sommes une communauté et une startup vous accompagnant à devenir des héros à travers nos solutions des Alitcha Business Tools, nos services de développement logiciel & design numérique, notre laboratoire de recherche Alitcha Labs et notre programme  qui vise à vous accompagner dans votre processus de développement à travers nos contenus; nos activités & événements  communautaires.             </p>
             <div className='py-4 text-center lg:text-start'>
                 <Button rounded secondary>
                     <span className='text-[#C8D6B1] flex items-center gap-2'>

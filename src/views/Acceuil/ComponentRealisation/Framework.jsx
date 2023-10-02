@@ -5,15 +5,18 @@ function Framework() {
     <div>
         <div className='py-2'>
             <h2 className='mb-4 font-bold'>Presentaation</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat quasi voluptatum, perferendis excepturi voluptate reprehenderit inventore a velit sapiente officiis dolore repudiandae provident. Ducimus, dolorum ratione nisi qui culpa ab eligendi vero? In, ut tenetur perspiciatis harum doloremque reiciendis odit nobis voluptate deleniti. Odio commodi voluptate aut dignissimos, cupiditate esse!</p>
+            <p>Alitcha Services est une division de Alitcha Business Tools dédiée à fournir des services dans les domaines du développement logiciel et du design numérique, afin d'aider les jeunes entreprises et entrepreneurs à optimiser leurs activités et à accélérer leur processus de développement.</p>
         </div>
         <div className='py-2'>
             <h2 className='mb-4 font-bold'>Objectifs</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe quam quidem officiis quaerat dolores, dicta asperiores ea corrupti sunt debitis atque voluptatum nihil, quis accusantium non similique quo ut deserunt, minima veritatis molestias consectetur iure! Modi possimus eveniet inventore sapiente distinctio harum cumque, libero fugiat, deserunt reiciendis repellendus labore amet.</p>
+            <p>Notre objectif est d'accompagner les entreprises, entrepreneurs et organisations africaines dans leur transformation digitale, favorisant ainsi leur croissance et leur succès.</p>
         </div>
         <div className='py-2'>
             <h2 className='mb-4 font-bold'>Resultats</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab eligendi ut inventore quos aliquam obcaecati illo, labore deserunt praesentium, soluta non est adipisci, incidunt tenetur error commodi ducimus minima ipsum odio tempora at? Veritatis perspiciatis nemo laudantium blanditiis nisi quasi vitae voluptate mollitia deserunt, tempora quae reprehenderit porro ipsum perferendis.</p>
+            <ul className='list-inside list-disc'>
+                <li>Croissance et  développement des jeunes entreprises</li>
+                <li>Développement d'un Framework de conception no code accessible gratuitement aux jeunes et aux entreprises afin de faciliter la digitalisation du continent </li>
+            </ul>
         </div>
     </div>
     )

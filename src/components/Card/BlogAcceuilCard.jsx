@@ -2,7 +2,7 @@ import React from 'react'
 
 function BlogAcceuilCard({theme, date, titre, description}) {
   return (
-    <div className='rounded-xl shadow-xl min-w-[20rem] overflow-hidden'>
+    <div className='rounded-xl shadow-xl min-w-[20rem] overflow-hidden mx-6'>
         <div className='h-[16rem]'>
             {/* <img src="" alt="" /> */}
 			<div className='w-full h-full bg-gray-500'></div>

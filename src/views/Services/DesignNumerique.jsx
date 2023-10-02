@@ -2,7 +2,7 @@ import React from 'react'
 import personalize from '../../assets/personalize.svg'
 import illustrationDesign from '../../assets/illustrationDesign.svg'
 import Tabs from '../../components/Tabs/Tabs'
-import PackEntreprise from './ComponentDesignNumerique/PackEntreprise'
+import services from './ServiceListeDesign'
 
 function DesignNumerique() {
   return (
@@ -11,12 +11,21 @@ function DesignNumerique() {
         <h3 className='text-xl font-bold'>Design Numerique</h3>
         <div className='flex gap-8 flex-col lg:flex-row items-center'>
             <img src={illustrationDesign} alt="Illustration Design" className='max-w-[18rem]'/>
-            <Tabs tabs={[
-                {title : "Pack Entreprise 1", content : <PackEntreprise/>},
-                {title : "Pack Entreprise 2", content : "", disabled : true},
-                {title : "Pack Personnel", content : "", disabled : true},
-                {title : "Offre Premium", content : "", disabled : true },
-            ]}/>
+            <Tabs tabs={services.map((service, index)=>{
+                return {
+                    title: service.title,
+                    content: <>
+                        <ul className='list-inside list-disc'>
+                            {service.offres ? service.offres.map((offre, index)=>{
+                                return <li className='my-4' key={index}>{offre}</li>
+                            }) : ""}
+                        </ul>
+                        <p className='my-4'>
+                            {service.descriptions}
+                        </p>
+                    </>
+                }
+            })}/>
         </div>
     </div>
   )

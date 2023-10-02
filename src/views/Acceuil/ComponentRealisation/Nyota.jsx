@@ -5,15 +5,24 @@ function Nyota() {
     <div>
         <div className='py-2'>
             <h2 className='mb-4 font-bold'>Presentaation</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat quasi voluptatum, perferendis excepturi voluptate reprehenderit inventore a velit sapiente officiis dolore repudiandae provident. Ducimus, dolorum ratione nisi qui culpa ab eligendi vero? In, ut tenetur perspiciatis harum doloremque reiciendis odit nobis voluptate deleniti. Odio commodi voluptate aut dignissimos, cupiditate esse!</p>
+            <p>Le dévelopement technologique et en générale de l'Afrique passe par sa capacité à anticiper les grandes tendances pour être un acteur mondial important au moment venu. C'est la raison pour laquelle , nous avons pour ambition de créer un centre du futur qui va aider à faire des prédiction, sensibiliser , travailler sur des projets futuristes et surtout aider les entreprises et gouvernement a préparer le futur.</p>
         </div>
         <div className='py-2'>
             <h2 className='mb-4 font-bold'>Objectifs</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe quam quidem officiis quaerat dolores, dicta asperiores ea corrupti sunt debitis atque voluptatum nihil, quis accusantium non similique quo ut deserunt, minima veritatis molestias consectetur iure! Modi possimus eveniet inventore sapiente distinctio harum cumque, libero fugiat, deserunt reiciendis repellendus labore amet.</p>
+            <ul className='list-inside list-disc'>
+                <li>Sensibiliser les acteurs clés (entreprises, gouvernements, éducateurs, etc.) à l'importance de l'anticipation des tendances futures</li>
+                <li>Organiser des conférences et des ateliers sur les tendances futures,</li>
+                <li>Etablir des partenariats avec des acteurs clés dans le domaine de l'anticipation des tendances futures. </li>
+            </ul>
         </div>
         <div className='py-2'>
             <h2 className='mb-4 font-bold'>Resultats</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab eligendi ut inventore quos aliquam obcaecati illo, labore deserunt praesentium, soluta non est adipisci, incidunt tenetur error commodi ducimus minima ipsum odio tempora at? Veritatis perspiciatis nemo laudantium blanditiis nisi quasi vitae voluptate mollitia deserunt, tempora quae reprehenderit porro ipsum perferendis.</p>
+            <ul className='list-inside list-disc'>
+                <li>Développer une expertise solide en matière d'anticipation des tendances futures</li>
+                <li>produire des rapports de recherche réguliers sur les tendances futures</li>
+                <li>Organiser des événements plus grands tels que des foires commerciales, des festivals et des expositions sur le futur</li>
+                <li>Faire de la recherche pour développer progressivement des solutions futuristes. </li>
+            </ul>
         </div>
     </div>
   )

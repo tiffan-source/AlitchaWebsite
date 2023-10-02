@@ -5,15 +5,27 @@ function Kumaa() {
     <div>
         <div className='py-2'>
             <h2 className='mb-4 font-bold'>Presentaation</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat quasi voluptatum, perferendis excepturi voluptate reprehenderit inventore a velit sapiente officiis dolore repudiandae provident. Ducimus, dolorum ratione nisi qui culpa ab eligendi vero? In, ut tenetur perspiciatis harum doloremque reiciendis odit nobis voluptate deleniti. Odio commodi voluptate aut dignissimos, cupiditate esse!</p>
+            <p>Projet phare de Alitcha, Il propose un certain nombre de solutions interopérables entre elles qui visent à favoriser le développement professionnel des jeunes et des organisations. Elles permettront entre autres un accès facile à la connaissance et aux financements ainsi qu’à des espaces pour la vente des biens et services. A ces solutions s’ajoutent des outils de gestion pour garantir la croissance dans les diverses activités. </p>
         </div>
         <div className='py-2'>
             <h2 className='mb-4 font-bold'>Objectifs</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe quam quidem officiis quaerat dolores, dicta asperiores ea corrupti sunt debitis atque voluptatum nihil, quis accusantium non similique quo ut deserunt, minima veritatis molestias consectetur iure! Modi possimus eveniet inventore sapiente distinctio harum cumque, libero fugiat, deserunt reiciendis repellendus labore amet.</p>
+            <ul className='list-disc list-inside'>
+                <li>Mettre en place un système interopérable d'API </li>
+                <li>Offrir des solutions pour résoudre les problèmes des jeunes Africains </li>
+                <li>Proposer des solutions innovantes basés sur les technologies émergentes </li>
+                <li>Mettre en avant les besoins du futu</li>
+            </ul>
         </div>
         <div className='py-2'>
             <h2 className='mb-4 font-bold'>Resultats</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab eligendi ut inventore quos aliquam obcaecati illo, labore deserunt praesentium, soluta non est adipisci, incidunt tenetur error commodi ducimus minima ipsum odio tempora at? Veritatis perspiciatis nemo laudantium blanditiis nisi quasi vitae voluptate mollitia deserunt, tempora quae reprehenderit porro ipsum perferendis.</p>
+            <ul className='list-inside list-disc'>
+                <li>
+                Des millions des jeunes stables professionnellement et financièrement grâce à nos solutions 
+                </li>
+                <li>
+                Des milliers d'emplois créé grace au développement et la l'expansion des Alitcha Business Tools 
+                </li>
+            </ul>
         </div>
     </div>
     )

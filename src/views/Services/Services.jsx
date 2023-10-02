@@ -18,7 +18,7 @@ function Services() {
 
         <OffreSuplementaire/>
 
-        <Stats/>
+        {/* <Stats/> */}
     
         <AvisService/>
 

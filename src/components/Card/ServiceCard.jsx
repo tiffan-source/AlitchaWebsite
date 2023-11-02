@@ -8,7 +8,7 @@ function ServiceCard({icon, title, offres, main}) {
     <div className='w-[20rem] m-6'>
         <img src={icon} alt="card icone" className='w-[5rem]'/>
         <h3 className='text-xl font-bold py-6'>{title}</h3>
-        <ul className='text-gray-600 flex flex-col gap-4 mb-6'>
+        <ul className='text-gray-600 flex flex-col gap-4 mb-6 lg:min-h-[18rem]'>
             {offres.map((offre, index)=>{
                 return (
                     <li key={index}>
@@ -17,9 +17,11 @@ function ServiceCard({icon, title, offres, main}) {
                 )
             })}
         </ul>
+        <div className='flex items-center'>
         {main ?
             <Button rounded>Demader un devis <span> <FontAwesomeIcon icon={faArrowRight}/> </span> </Button>
             : <span className='font-bold'>Demader un devis <span> <FontAwesomeIcon icon={faArrowRight}/> </span></span> }
+        </div>
     </div>
   )
 }

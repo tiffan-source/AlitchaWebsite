@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import eventMock from '../../assets/eventmock.jpg'
 import Button from '../../components/Button/Button'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'

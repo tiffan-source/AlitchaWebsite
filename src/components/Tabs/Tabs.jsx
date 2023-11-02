@@ -19,7 +19,7 @@ const Tabs = ({ tabs }) => {
               if(!tab.disabled)
                 handleTabClick(index)
             }}
-            className={"lg:pb-8" + ( activeTab === index ? ' font-bold text-primary' : '')}
+            className={"lg:pb-8 cursor-pointer " + ( activeTab === index ? ' font-bold text-primary' : '')}
           >
 
             {(activeTab === index) && <FontAwesomeIcon icon={faArrowRight}/>}

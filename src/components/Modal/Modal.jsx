@@ -6,7 +6,7 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 
 function Modal() {
   return (
-    <div className='bg-white py-4 max-w-[25rem] flex flex-col items-center justify-center'>
+    <div className='bg-white p-12 max-w-[25rem] flex flex-col items-center justify-center rounded-3xl border border-[#d5e3ec]'>
         <h2 className='font-bold text-lg'>
         Envoyer un message
         </h2>

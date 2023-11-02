@@ -1,5 +1,5 @@
 import React from 'react';
-import chatbot1 from '../../assets/chatbot1.svg';
+import chatbot1 from '../../assets/mainHeader.png';
 import Button from '../../components/Button/Button';
 
 function HeaderAcceuil() {
@@ -10,8 +10,8 @@ function HeaderAcceuil() {
             <h1 className='font-bold text-3xl pb-8'>
                 Rien ne vous sera <span className='text-primary'>Impossible.</span>
             </h1>
-            <div className='lg:hidden'>
-                <img src={chatbot1} alt="Chatbot"/>
+            <div className='lg:hidden flex justify-center mb-8'>
+                <img className='inline-block max-w-[24rem]'src={chatbot1} alt="Chatbot"/>
             </div>
             <p className='text-gray-600'>
             Nous sommes une communauté et une startup vous accompagnant à devenir des héros à travers nos solutions des Alitcha Business Tools, nos services de développement logiciel & design numérique, notre laboratoire de recherche Alitcha Labs et notre programme  qui vise à vous accompagner dans votre processus de développement à travers nos contenus; nos activités & événements  communautaires.             </p>
@@ -23,8 +23,8 @@ function HeaderAcceuil() {
                 </Button>
             </div>
         </div>
-        <div className='hidden lg:block'>
-            <img src={chatbot1} alt="Chatbot"/>
+        <div className='hidden lg:flex justify-center items-center'>
+            <img  className='inline-block max-w-[24rem]' src={chatbot1} alt="Chatbot"/>
         </div>
     </header>
   )

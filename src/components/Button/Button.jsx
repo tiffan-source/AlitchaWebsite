@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Button({children, rounded, secondary}) {
+function Button({children, rounded, secondary, action}) {
     let additionalClass = ''
 
     if(rounded)
@@ -10,7 +10,9 @@ function Button({children, rounded, secondary}) {
         additionalClass += ' bg-secondary'
 
     return (
-        <button className={'px-4 py-3 bg-primary text-white md:w-max' + additionalClass}>
+        <button onClick={()=>{
+            action && action()
+        }} className={'px-4 py-3 bg-primary text-white md:w-max' + additionalClass}>
             {children}
         </button>
     )
